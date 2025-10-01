@@ -67,13 +67,13 @@
 }
 
 .header__logo {
-    height: 50px;
+    height: 200px;
 }
 
 .nav__links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .nav__link {
@@ -111,4 +111,32 @@
     font-family: 'normal-italic', sans-serif;
     color: var(--text-color-oscuro);
     font-size: 14px;
+    padding: 16px;
+}
+
+.ft__links {
+    list-style-type: none;
+}
+
+.ft__link {
+    color: var(--color-btn);
+    text-decoration: none;
+}
+
+.ft__link:hover {
+    text-decoration: underline;
+}
+
+.ft__icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.ft__horario {
+    font-family: 'normal-italic', sans-serif;
+    color: var(--text-color-oscuro);
+    font-size: 14px;
+    padding: 16px;
 }
