@@ -1,19 +1,24 @@
+/* ===================== VARIABLES ===================== */
 :root {
     --color-ft-h1: #63584D;
     --color-h2-header: #ADBF97;
     --color-fondo-inter: #C7B7AA;
     --color-fondo: #F5F4F2;
     --color-btn: #758E4F;
+
     --border-radius: 8px;
+
     --shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --shadow-card: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --shadow-input: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --shadow-header: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --shadow-footer: 0px -4px 4px rgba(0, 0, 0, 0.25);
+
     --text-color-blanco: #F5F4F2;
     --text-color-oscuro: #63584D;
 }
 
+/* ===================== TIPOGRAFÍAS ===================== */
 @font-face {
     font-family: 'Marcellus';
     src: url(fonts/Marcellus-Regular.ttf);
@@ -34,14 +39,24 @@
     src: url(fonts/Norma-Italic.ttf);
 }
 
+/* ===================== RESET ===================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--color-fondo);
+    font-family: 'norma-regular', sans-serif;
+    color: var(--text-color-oscuro);
+    line-height: 1.6;
+}
+
+/* ===================== BOTÓN ===================== */
 .btn {
     background-color: var(--color-btn);
+    color: var(--text-color-blanco);
     border: none;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-btn);
@@ -50,10 +65,15 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    color: var(--text-color-blanco)
+    display: inline-block;
+    margin-top: 10px;
 }
 
-/*****Header*****/
+.btn:hover {
+    background-color: #5f743e;
+}
+
+/* ===================== HEADER ===================== */
 .header {
     display: flex;
     justify-content: space-between;
@@ -67,13 +87,13 @@
 }
 
 .header__logo {
-    height: 200px;
+    height: 120px;
 }
 
 .nav__links {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
 .nav__link {
@@ -88,39 +108,156 @@
     color: var(--color-btn);
 }
 
-/******hero******/
+/* ===================== HERO ===================== */
 .hero {
     background-color: var(--color-fondo-inter);
-    padding: 50px 20px;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: var(--border-radius);
+    margin-top: 16px;
+}
+
+.hero__title {
+    font-size: 2.5em;
+    font-family: 'Marcellus', serif;
+    margin-bottom: 10px;
+}
+
+.hero__subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* ===================== SECCIONES ===================== */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'normal-bold', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: var(--color-ft-h1);
+}
+
+/* ===================== contenedor blanco ===================== */
+.contenedor-blanco {
+    background-color: #fff;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+/* ===================== LISTA DE PASOS ===================== */
+.steps__list {
+    list-style: decimal inside;
+    padding-left: 20px;
+}
+
+.steps__item {
+    margin-bottom: 10px;
+}
+
+/* ===================== TESTIMONIOS ===================== */
+.testimonial {
+    background-color: #e9e3dd;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-card);
+    margin-bottom: 20px;
+}
+
+.testimonial__text {
+    font-style: italic;
+}
+
+.testimonial__author {
+    text-align: right;
+    font-family: 'normal-italic', sans-serif;
+    margin-top: 10px;
+}
+
+/* ===================== PRODUCTOS ===================== */
+.producto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.producto__card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-card);
     text-align: center;
 }
 
-/*****Footer*****/
+.producto__image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+}
+
+.producto__name {
+    font-family: 'normal-bold', sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.producto__price {
+    color: var(--color-btn);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.producto__button {
+    background-color: var(--color-btn);
+    color: var(--text-color-blanco);
+    padding: 6px 12px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.producto__button:hover {
+    background-color: #5f743e;
+}
+
+/* ===================== FOOTER ===================== */
 .ft {
     background-color: var(--color-fondo);
     box-shadow: var(--shadow-footer);
     text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 20px;
+    padding: 30px 20px;
+    margin-top: 40px;
 }
 
-.ft__text {
+.ft__text,
+.ft__horario {
     font-family: 'normal-italic', sans-serif;
-    color: var(--text-color-oscuro);
     font-size: 14px;
-    padding: 16px;
+    color: var(--text-color-oscuro);
+    margin-bottom: 10px;
 }
 
 .ft__links {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
 }
 
 .ft__link {
     color: var(--color-btn);
     text-decoration: none;
+    font-weight: bold;
 }
 
 .ft__link:hover {
@@ -134,9 +271,9 @@
     margin-left: 5px;
 }
 
-.ft__horario {
-    font-family: 'normal-italic', sans-serif;
-    color: var(--text-color-oscuro);
-    font-size: 14px;
-    padding: 16px;
+.ft__buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
