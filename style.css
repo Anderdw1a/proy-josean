@@ -142,6 +142,37 @@ h2 {
     color: var(--color-ft-h1);
 }
 
+/* ===================== contenedor Main ===================== */
+.contenedor-main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+/* ===================== contenedor form ===================== */
+.contenedor__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* =====================  formulario ===================== */
+.contenedor__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===================== contenedor mapa ===================== */
+.contenedor__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* ===================== contenedor blanco ===================== */
 .contenedor-blanco {
     background-color: #fff;
