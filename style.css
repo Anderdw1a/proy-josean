@@ -165,6 +165,8 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 64px;
+    background: url(https://www.antiguedades.es/themes/theme1225/css/../img/contact-form.png) repeat-x white;
+
 }
 
 /* ===================== contenedor form ===================== */
@@ -209,6 +211,25 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* ===================== SOBRE NOSOTROS ===================== */
+.about__img {
+    width: 50%;
+    padding: 16px
+}
+
+/* ===================== RECOMENDACIONES ===================== */
+
+.recomendacion__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recomendacion__image {
+    width: 40%;
+    padding: 16px;
+}
+
 /* ===================== TESTIMONIOS ===================== */
 .testimonial {
     background-color: #e9e3dd;
@@ -227,6 +248,18 @@ h2 {
     font-family: 'normal-italic', sans-serif;
     margin-top: 10px;
 }
+
+.carrusel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car__img {
+    width: 40%;
+    padding: 16px;
+}
+
 
 /* ===================== PRODUCTOS ===================== */
 .producto {
