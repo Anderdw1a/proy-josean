@@ -11,8 +11,7 @@
     --shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --shadow-card: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --shadow-input: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    --shadow-header: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    --shadow-footer: 0px -4px 4px rgba(0, 0, 0, 0.25);
+
 
     --text-color-blanco: #F5F4F2;
     --text-color-oscuro: #63584D;
@@ -78,16 +77,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color: var(--color-fondo);
-    box-shadow: var(--shadow-header);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    flex-direction: column;
+    width: 100%;
 }
 
 .header__logo {
-    height: 120px;
+    height: 150px;
 }
 
 .nav__links {
@@ -108,25 +106,43 @@ body {
     color: var(--color-btn);
 }
 
+.header__banner {
+    background-color: var(--color-h2-header);
+    text-align: center;
+    padding: 8px 0;
+    position: top;
+    width: 100%;
+}
+
+.header__banner-text {
+    color: var(--text-color-blanco);
+    font-family: 'normal-bold', sans-serif;
+    font-size: 14px;
+}
+
+.header__nav {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
 /* ===================== HERO ===================== */
 .hero {
-    background-color: var(--color-fondo-inter);
-    text-align: center;
-    padding: 60px 20px;
-    border-radius: var(--border-radius);
-    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero__title {
-    font-size: 2.5em;
-    font-family: 'Marcellus', serif;
-    margin-bottom: 10px;
+.hero img {
+    width: 100%;
+    height: 90%;
 }
 
-.hero__subtitle {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
+
 
 /* ===================== SECCIONES ===================== */
 section {
@@ -263,10 +279,10 @@ h2 {
 /* ===================== FOOTER ===================== */
 .ft {
     background-color: var(--color-fondo);
-    box-shadow: var(--shadow-footer);
     text-align: center;
     padding: 30px 20px;
     margin-top: 40px;
+    background-color: var(--color-ft-h1);
 }
 
 .ft__text,
@@ -275,6 +291,7 @@ h2 {
     font-size: 14px;
     color: var(--text-color-oscuro);
     margin-bottom: 10px;
+    color: white;
 }
 
 .ft__links {
@@ -307,4 +324,5 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 10px;
+    border-radius: var(--border-radius);
 }
