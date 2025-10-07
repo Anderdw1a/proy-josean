@@ -74,42 +74,72 @@ body {
 
 /* ===================== HEADER ===================== */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-fondo);
     position: sticky;
-    top: 0;
-    flex-direction: column;
     width: 100%;
+    background-color: var(--color-fondo);
+    z-index: 1000;
+}
+
+.header__nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header__logo {
-    height: 150px;
+    position: fixed;
+    width: 120px;
+    left: 50px;
+}
+
+.header__styki {
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    left: 50%;
+    z-index: 1001;
+}
+
+.nav__floating {
+    position: absolute;
+    top: 15px;
+    right: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-btn);
+    padding: 10px 20px;
 }
 
 .nav__links {
-    list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__link {
     text-decoration: none;
     color: var(--text-color-oscuro);
-    font-family: 'normal-bold', sans-serif;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .nav__link:hover {
-    color: var(--color-btn);
+    background-color: var(--color-btn);
+    color: var(--text-color-blanco);
 }
+
 
 .header__banner {
     background-color: var(--color-h2-header);
     text-align: center;
     padding: 8px 0;
+    position: relative;
     position: top;
     width: 100%;
 }
