@@ -292,10 +292,18 @@ h2 {
 
 
 /* ===================== PRODUCTOS ===================== */
-.producto {
+.producto__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.producto {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
 }
 
 .producto__card {
@@ -307,10 +315,11 @@ h2 {
 }
 
 .producto__image {
-    width: 100%;
-    height: auto;
+    width: 40%;
+    height: 90%;
     border-radius: var(--border-radius);
     margin-bottom: 10px;
+    margin: 16px;
 }
 
 .producto__name {
@@ -319,13 +328,24 @@ h2 {
     margin-bottom: 5px;
 }
 
+.producto__name:hover {
+    color: var(--color-btn);
+}
+
 .producto__price {
     color: var(--color-btn);
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.producto__button {
+.producto__enlace {
+    text-decoration: none;
+    color: var(--text-color-oscuro);
+}
+
+.producto__button,
+.compra,
+.venta {
     background-color: var(--color-btn);
     color: var(--text-color-blanco);
     padding: 6px 12px;
@@ -338,6 +358,27 @@ h2 {
 .producto__button:hover {
     background-color: #5f743e;
 }
+
+/* ===================== CATALOGO ===================== */
+
+.catalogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.venta {
+    background-color: rgb(124, 19, 19);
+}
+
+.btn__flex {
+    margin: 8px;
+    gap: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 /* ===================== FOOTER ===================== */
 .ft {
