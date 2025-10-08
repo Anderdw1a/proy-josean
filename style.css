@@ -172,7 +172,63 @@ body {
     height: 90%;
 }
 
+/*=================grid categoria imagenes=================*/
+/*el grid tiene que tener la primera imagen grande y las demas mas pequeñas y tiene que ocupar toda la pantalla a lo ancho*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    padding: 20px;
+}
 
+.grid-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.grid-item span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.grid-item a {
+    color: white;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+/* PUERTAS ocupa toda la primera columna */
+.puertas {
+    background-image: url('img/puerta-1.webp');
+    grid-row: 1 / span 2;
+    grid-column: 1 / 2;
+}
+
+.muebles {
+    background-image: url('img/muebles.jpg');
+}
+
+.decoracion {
+    background-image: url('img/decoracion_1.jpg');
+}
+
+.jardin {
+    background-image: url('img/paisajismo.webp');
+}
+
+.iluminacion {
+    background-image: url('img/iluminacion.jpg');
+}
 
 /* ===================== SECCIONES ===================== */
 section {
