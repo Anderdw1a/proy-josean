@@ -177,8 +177,6 @@ body {
 /* ===================== SECCIONES ===================== */
 section {
     padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
 }
 
 h2 {
@@ -306,6 +304,10 @@ h2 {
     width: 100%;
 }
 
+.productos__title {
+    text-align: center;
+}
+
 .producto__card {
     background-color: #fff;
     padding: 15px;
@@ -362,9 +364,7 @@ h2 {
 /* ===================== CATALOGO ===================== */
 
 .catalogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
 }
 
 .venta {
@@ -379,6 +379,29 @@ h2 {
     align-items: center;
 }
 
+/* ===================== CATEGORIAS ===================== */
+.menu__list {
+    list-style: none;
+    gap: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: var(--text-color-oscuro);
+}
+
+.menu__link:hover {
+    background-color: #a5988d;
+    padding: 8px;
+    color: white;
+}
+
+.menu-categorias {
+    text-align: center;
+}
 
 /* ===================== FOOTER ===================== */
 .ft {
