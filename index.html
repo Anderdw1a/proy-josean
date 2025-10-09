@@ -12,12 +12,12 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <header class="header__banner">
+        <div class="header__banner">
             <p class="header__banner-text">
                 ¡Bienvenido a Antigüedades Al Gusto! Tu plataforma confiable para comprar y vender antigüedades.
             </p>
             <div class="header__nav">
-                <img src="img/escultura2.png" alt="Logo" class="header__logo" />
+                <a href="#"><img src="img/escultura2.png" alt="Logo" class="header__logo" /></a>
                 <div class="header__styki">
                     <nav class="nav__floating">
                         <ul class="nav__links">
@@ -29,94 +29,105 @@
                     </nav>
                 </div>
             </div>
-        </header>
-        <!-- Hero -->
-        <div class="hero">
-            <img src="img/hero.png" alt="nuesto-hero" class="hero__img">
         </div>
-        <div class="contenedor-blanco">
-            <!-- Main -->
-            <main class="main">
+    </header>
+    <!-- Hero -->
+    <div class="hero">
+        <a href="venta-compra.html"><img src="img/hero.png" alt="nuesto-hero" class="hero__img"></a>
+    </div>
+    <div class="contenedor-blanco">
+        <!-- Main -->
+        <main class="main">
+            <!-- Info -->
+            <section class="info">
+                <h2 class="info__title">¿Cómo Funciona?</h2>
+                <p class="info__text">
+                    En Antigüedades Al Gusto, facilitamos la compra y venta de antigüedades. Regístrate, publica tus artículos o explora nuestro catálogo para encontrar piezas únicas.
+                </p>
+            </section>
+            <!-- Steps -->
+            <section class="steps">
+                <h2 class="steps__title">Pasos para Comprar o Vender</h2>
+                <ol class="steps__list">
+                    <li class="steps__item">Regístrate en nuestra plataforma.</li>
+                    <li class="steps__item">Publica tu antigüedad con fotos y descripción.</li>
+                    <li class="steps__item">Explora el catálogo y encuentra lo que buscas.</li>
+                    <li class="steps__item">Comunícate con el vendedor/comprador.</li>
+                    <li class="steps__item">Realiza la transacción de forma segura.</li>
+                </ol>
+            </section>
+            <!--grid categoria imagenes-->
+            <div class="grid-container">
+                <div class="grid-item puertas">
+                    <span>PUERTAS DE MADERA</span>
+                    <a href="venta-compra.html">Comprar puertas de madera ></a>
+                </div>
+                <div class="grid-item muebles">
+                    <span>MUEBLES DE MADERA</span>
+                    <a href="venta-compra.html">Comprar muebles de madera ></a>
+                </div>
+                <div class="grid-item decoracion">
+                    <span>DECORACIÓN</span>
+                    <a href="venta-compra.html">Comprar decoración ></a>
+                </div>
+                <div class="grid-item jardin">
+                    <span>JARDÍN</span>
+                    <a href="venta-compra.html">Comprar jardín ></a>
+                </div>
+                <div class="grid-item iluminacion">
+                    <span>ILUMINACIÓN</span>
+                    <a href="venta-compra.html">Comprar iluminación ></a>
+                </div>
+            </div>
+            <!-- Testimonials -->
+            <div class="contenedor-testimonios">
+                <h2>Testimonios de clientes</h2>
+                <div class="medio">
+                    <div class="contenedor_items">
+                        <p>Excelente plataforma para comprar antigüedades. Encontré una pieza única para mi colección.
+                        </p>
+                        <img src="https://cdn.pixabay.com/photo/2024/08/30/10/15/woman-9009013_1280.png" alt="">
+                        <h3>-Angie </h3>
+                        <h4>Desarrolladora Web</h4>
+                    </div>
 
-                <!-- Info -->
-                <section class="info">
-                    <h2 class="info__title">¿Cómo Funciona?</h2>
-                    <p class="info__text">
-                        En Antigüedades Al Gusto, facilitamos la compra y venta de antigüedades. Regístrate, publica tus
-                        artículos o explora nuestro catálogo para encontrar piezas únicas.
-                    </p>
-                </section>
+                    <div class="contenedor_items">
+                        <p>Vender mi antigüedad fue sencillo y seguro. La plataforma es fácil de usar y el soporte es
+                            excelente.</p>
+                        <img src="https://cdn.pixabay.com/photo/2024/03/31/14/21/ai-generated-8666785_1280.png" alt="">
+                        <h3>-Ander</h3>
+                        <h4>Maquetador Web</h4>
+                    </div>
 
-                <!-- Steps -->
-                <section class="steps">
-                    <h2 class="steps__title">Pasos para Comprar o Vender</h2>
-                    <ol class="steps__list">
-                        <li class="steps__item">Regístrate en nuestra plataforma.</li>
-                        <li class="steps__item">Publica tu antigüedad con fotos y descripción.</li>
-                        <li class="steps__item">Explora el catálogo y encuentra lo que buscas.</li>
-                        <li class="steps__item">Comunícate con el vendedor/comprador.</li>
-                        <li class="steps__item">Realiza la transacción de forma segura.</li>
-                    </ol>
-                </section>
-
-                <!--grid categoria imagenes-->
-                <div class="grid-container">
-                    <div class="grid-item puertas">
-                        <span>PUERTAS DE MADERA</span>
-                        <a href="#">Comprar puertas de madera ></a>
-                    </div>
-                    <div class="grid-item muebles">
-                        <span>MUEBLES DE MADERA</span>
-                        <a href="#">Comprar muebles de madera ></a>
-                    </div>
-                    <div class="grid-item decoracion">
-                        <span>DECORACIÓN</span>
-                        <a href="#">Comprar decoración ></a>
-                    </div>
-                    <div class="grid-item jardin">
-                        <span>JARDÍN</span>
-                        <a href="#">Comprar jardín ></a>
-                    </div>
-                    <div class="grid-item iluminacion">
-                        <span>ILUMINACIÓN</span>
-                        <a href="#">Comprar iluminación ></a>
+                    <div class="contenedor_items">
+                        <p>La variedad de antigüedades es impresionante. Encontré justo lo que buscaba a un buen precio.
+                        </p>
+                        <img src="https://cdn.pixabay.com/photo/2022/10/10/19/18/mad-scientist-7512538_1280.jpg" alt="">
+                        <h3>-Iker</h3>
+                        <h4>Programador Web</h4>
                     </div>
                 </div>
-                <!-- Testimonials -->
-                <section class="testimonials">
-                    <h2 class="testimonials__title">Testimonios</h2>
-                    <div class="testimonial">
-                        <p class="testimonial__text">"Gracias a Antigüedades Al Gusto, vendí mi colección de relojes
-                            antiguos
-                            rápidamente y sin complicaciones."</p>
-                        <p class="testimonial__author">– María G.</p>
-                    </div>
-                    <div class="testimonial">
-                        <p class="testimonial__text">"Encontré una lámpara vintage perfecta para mi sala. El proceso fue
-                            sencillo y seguro."</p>
-                        <p class="testimonial__author">– Juan P.</p>
-                    </div>
-                </section>
-            </main>
-        </div>
-        <footer class="ft">
-            <p class="ft__text">© 2025 Antigüedades Al Gusto. Todos los derechos reservados.</p>
-            <ul class="ft__links">
-                <li><a href="#" class="ft__link">Política de Privacidad</a></li>
-                <li><a href="#" class="ft__link">Términos de Servicio</a></li>
-                <li><a href="contacto.html" class="ft__link">Contacto</a></li>
-            </ul>
-            <p class="ft__horario">Horario de Atención: Lunes a Viernes 9:00 - 18:00</p>
-            <div class="ft__buttons">
-                <button class="btn">Subir</button>
-                <button class="ft__buttons">
-                    <img src="img/telefono.png" alt="Teléfono" class="ft__icon" />
-                </button>
-                <button class="ft__buttons">
-                    <img src="img/whatsapp.png" alt="WhatsApp" class="ft__icon" />
-                </button>
             </div>
-        </footer>
+        </main>
+    </div>
+    <footer class="ft">
+        <p class="ft__text">© 2025 Antigüedades Al Gusto. Todos los derechos reservados.</p>
+        <ul class="ft__links">
+            <li><a href="#" class="ft__link">Política de Privacidad</a></li>
+            <li><a href="#" class="ft__link">Términos de Servicio</a></li>
+            <li><a href="contacto.html" class="ft__link">Contacto</a></li>
+        </ul>
+        <p class="ft__horario">Horario de Atención: Lunes a Viernes 9:00 - 18:00</p>
+        <div class="ft__buttons">
+            <button class="btn">Subir</button>
+            <button class="ft__buttons">
+                <img src="img/telefono.png" alt="Teléfono" class="ft__icon" />
+            </button>
+            <button class="ft__buttons">
+                <img src="img/whatsapp.png" alt="WhatsApp" class="ft__icon" />
+            </button>
+        </div>
+    </footer>
 </body>
 
 </html>
