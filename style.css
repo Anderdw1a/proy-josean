@@ -250,38 +250,59 @@ h2 {
     justify-content: center;
     gap: 64px;
     background: url(https://www.antiguedades.es/themes/theme1225/css/../img/contact-form.png) repeat-x white;
+    padding: 16px;
+    margin: 16px;
 
 }
 
-/* ===================== contenedor form ===================== */
-.contenedor__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
+
 
 /* =====================  formulario ===================== */
-.contenedor__form {
+.formulario {
+    margin: 16px;
+    padding: 16px;
+
+}
+
+/* =====================  contenedor formulario ===================== */
+.form {
+    margin: 16px;
+    padding: 16px;
+}
+
+.contenedor__formulario {
+    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 64px;
+
 }
 
 /* ===================== contenedor mapa ===================== */
-.contenedor__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contenedor__mapa {
+    text-align: center;
+}
+
+.mapa {
+    width: 300px;
+    height: 250px;
 }
 
 /* ===================== contenedor blanco ===================== */
 .contenedor-blanco {
     background-color: #fff;
-    text-align: center;
     height: 100%;
     width: 50%;
     margin: 0 auto;
+    padding-top: 16px;
+}
+
+.contenedor-blanco__contacto {
+    background-color: #fff;
+    height: 100%;
+    width: 70%;
+    margin: 100px auto;
     padding-top: 16px;
 }
 
@@ -423,14 +444,6 @@ h2 {
     text-align: center;
 }
 
-.producto__card {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-card);
-    text-align: center;
-}
-
 .producto__image {
     width: 40%;
     height: 90%;
@@ -460,7 +473,6 @@ h2 {
     color: var(--text-color-oscuro);
 }
 
-.producto__button,
 .compra,
 .venta {
     background-color: var(--color-btn);
@@ -472,9 +484,7 @@ h2 {
     font-size: 14px;
 }
 
-.producto__button:hover {
-    background-color: #5f743e;
-}
+
 
 /* ===================== CATALOGO ===================== */
 
@@ -527,6 +537,12 @@ h2 {
     background-color: var(--color-ft-h1);
 }
 
+.ft-contacto {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .ft__text,
 .ft__horario {
     font-family: 'normal-italic', sans-serif;
@@ -569,31 +585,29 @@ h2 {
     border-radius: var(--border-radius);
 }
 
+/* ===================== MEDIA QUERYS ===================== */
 
-
-/* ===================== MEDIA QUERIES ===================== */
-
-/*mediaqueries para testimonios*/
-/* @media screen and (max-width:800px) {
-    .contenedor-testimonios {
-        .medio {
-            flex-wrap: wrap;
-        }
+/* ===================== CONTACTO ===================== */
+@media (max-width:970px) {
+    .contenedor__formulario {
+        flex-direction: column;
     }
 
-    .contenedor_items {
-        width: 40%;
-        flex: auto;
-        margin-bottom: 10px;
+    .mapa {
+        width: 80%;
+        height: 80%;
+    }
+
+    .ft-contacto {
+        height: 100%;
+        position: static;
+    }
+
+    .header__logo {
+        left: -16px;
+    }
+
+    .header__styki {
+        top: 60px;
     }
 }
-
-
-@media screen and (max-width:500px) {
-
-    .contenedor_items {
-        width: 100%;
-        flex: auto;
-
-    }
-} */
